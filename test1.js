@@ -2,7 +2,7 @@ const getTotalIsles = require('./program1');
 const assert = require("assert");
 
 
-getTotalIsles("Test cases for finding total number of Islands", function () {
+describe("Test cases for finding total number of Islands", function () {
 
     it(`Returns 1 for [["L","L","L","L","W"],["L","L","W","L","W"],["L","L","W","W","W"],["W","W","W","W","W"]]`, function () {
         const result = getTotalIsles([["L", "L", "L", "L", "W"], ["L", "L", "W", "L", "W"], ["L", "L", "W", "W", "W"], ["W", "W", "W", "W", "W"]]);

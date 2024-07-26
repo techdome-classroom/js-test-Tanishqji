@@ -1,4 +1,4 @@
-const decodeTheRing = function (s, p) {
+const decodeTheRing = function describe (s, p) {
   const m = s.length;
   const n = p.length;
   
@@ -7,7 +7,7 @@ const decodeTheRing = function (s, p) {
   
   dp[0][0] = true;
   
-  
+
   for (let i = 1; i <= n; i++) {
       if (p[i - 1] === '*') {
           dp[i][0] = dp[i - 1][0];
